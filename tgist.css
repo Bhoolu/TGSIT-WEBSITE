@@ -1,0 +1,543 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&family=Poppins:wght@500&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/* body {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+} */
+
+/* body.fade-in {
+  opacity: 1;
+} */
+
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+button,
+.cta-button {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  /* background: url(./images/supervisor-doing-checkup-data-center-workplace-verifying-reports-files.jpg); */
+  background: url(./images/virtual-padlock-hologram-dark-blue-background-concept-network-security-cyber-security-network.jpg);
+}
+.one {
+  background: url(./images/employee-monitoring-supercomputers-issues-such-as-overheating.jpg)
+    no-repeat center center;
+  background-size: cover;
+  height: 1000px;
+}
+.header {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Navbar layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+/* Logo section */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-icon {
+  height: 60px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.logo-text {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.logo-text small {
+  font-size: 0.85rem;
+  color: #eee;
+  font-style: italic;
+}
+
+.logo-text .tagline {
+  font-size: 0.75rem;
+  color: #ccc;
+}
+
+/* Navigation menu */
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin-left: auto;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: blue;
+}
+/* Floating box style */
+.floating-box {
+  position: fixed; /* stays in place while scrolling */
+  bottom: 40px; /* distance from bottom */
+  right: 40px; /* distance from right */
+  background: rgba(0, 0, 0, 0.8); /* semi-transparent background */
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  animation: slideUp 1s ease-in-out;
+}
+
+/* Different positions for About vs Overview */
+.about-box {
+  right: auto;
+  left: 40px; /* About Us floats bottom-left */
+}
+
+.overview-box {
+  right: 40px; /* Overview floats bottom-right */
+}
+
+/* Smooth animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Learn More link styling */
+.learn-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.learn-link:hover {
+  background: #0056b3;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  /* height: 900px; */
+  gap: 0.2rem;
+  /* padding: 10rem; */
+  flex-wrap: wrap;
+  /* background: url(./images/d3594114-cc81-43b1-9680-35910adb116e.jpg) no-repeat
+    center;
+  background-size: cover;  */
+  /* background-image: url(images/Copilot_20251102_030511.png); */
+}
+
+.about-content {
+  flex: 1 1 50%;
+  max-width: 1000px;
+}
+
+.about-content h2 {
+  font-size: 3rem;
+  padding-top: 20rem;
+  font-weight: bold;
+  padding-left: 3rem;
+  margin-bottom: 1rem;
+  /* color: white; */
+  text-align: left;
+  color: #00c6ff;
+}
+
+.about-content p {
+  font-size: 2rem;
+  line-height: 1.7;
+  padding-left: 3.5rem;
+  margin-bottom: 1rem;
+  color: rgb(221, 209, 209);
+  text-align: left;
+}
+.about-content blockquote {
+  color: white;
+  margin-top: 2rem;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.button-wrapper {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-bottom: 25px;
+}
+.learn-button {
+  padding: 0.75rem 1.5rem;
+  background-color: rgb(67, 67, 229);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.learn-button:hover {
+  background-color: blue;
+}
+
+.button-wrapper2 {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 25px;
+}
+.learn-button2 {
+  padding: 0.75rem 1.5rem;
+  background-color: rgb(67, 67, 229);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.learn-button2:hover {
+  background-color: blue;
+}
+
+.security-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(47, 83, 83);
+  font-size: 14px;
+  height: 30%;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  gap: 50px;
+  column-gap: 9%;
+  background-color: rgb(55, 55, 143);
+  animation-name: security-row;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  /* font-weight: 100px; */
+}
+@keyframes security-row {
+  from {
+    background-color: rgb(46, 46, 108);
+  }
+  to {
+    background-color: rgb(13, 13, 87);
+  }
+  to {
+    background-color: rgb(97, 125, 202);
+  }
+  to {
+    background-color: rgb(83, 135, 197);
+  }
+}
+.security-column {
+  font-size: 10px;
+  text-align: center;
+  color: white;
+}
+.cta-button {
+  background-color: rgb(79, 79, 180);
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+  background-color: blue;
+}
+
+.fourth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  text-align: center;
+  padding: 1rem 3rem;
+  color: rgb(235, 231, 231);
+  font-size: 1.5rem;
+  line-height: 1.8;
+  width: 100%;
+  height: 600px;
+  /* min-height: 90vh; */
+  background: url(./images/virtual-padlock-hologram-dark-blue-background-concept-network-security-cyber-security-network.jpg)
+    /* background: url("./images/8dc20b_07f1aa49c0ec48ffa1d1704192143b15.png") */
+    no-repeat center center;
+  background-size: cover;
+  /* border-radius: 8px;         */
+}
+.mission-section blockquote {
+  color: white;
+  margin-top: 3rem;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.overview-title {
+  font-size: 4rem;
+  align-items: left;
+  justify-content: center;
+  text-align: left;
+  color: #00c6ff;
+  margin-bottom: 3rem; /* creates space before Our Mission */
+}
+
+.mission-section {
+  text-align: left;
+  max-width: 70%;
+}
+
+.mission-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00c6ff;
+}
+
+.mission-section p {
+  margin-bottom: 1.5rem;
+}
+
+.fifth-container {
+  background: url("./images/Copilot_20251124_201842.png") no-repeat;
+  /* height: 50%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* text-size-adjust: 70%; */
+  text-align: center;
+  padding-top: 4rem, 2rem;
+  /* padding-bottom: 10%; */
+  /* padding-right: 7%;
+  padding-left: 5%; */
+  color: white;
+  font-size: 1.7rem;
+  height: 750px;
+  line-height: 2;
+  letter-spacing: 1px;
+  background-size: cover;
+  /* width: 100%; */
+}
+.section h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+.p {
+  max-width: 700px;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+.section blockquote {
+  font-style: italic;
+  color: white;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 5px solid black;
+}
+
+.column {
+  /* background-color: rgb(30, 30, 118); */
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 8px;
+}
+
+.column h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.column p {
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+.testimonial-section {
+  background: url(./images/th2.jpeg) no-repeat center center;
+  background-size: cover;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.testimonial-section h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial-carousel {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background-color: rgba(0, 0, 50, 0.6);
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 300px;
+  flex: 1;
+}
+
+.client-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+
+blockquote {
+  font-style: italic;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.client-name {
+  font-weight: bold;
+  color: #ccc;
+}
+
+.tgist-footer {
+  background-color: #1a1a3d;
+  color: white;
+  padding: 3rem 2rem 1rem;
+  font-family: "Segoe UI", sans-serif;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-grid > div {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-grid h3 {
+  color: #00c6ff;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-grid p,
+.footer-links li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #00c6ff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #ccc;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}
+
+.clients-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.client-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.client-card img {
+  max-width: 150px;
+  margin-bottom: 10px;
+}

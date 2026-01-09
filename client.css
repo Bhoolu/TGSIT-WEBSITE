@@ -1,0 +1,488 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&family=Poppins:wght@500&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  /* Add your background image here */
+  background: url("YOUR_IMAGE_PATH_HERE.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Header Styles */
+.header {
+  background: linear-gradient(
+    135deg,
+    rgba(26, 26, 61, 0.95) 0%,
+    rgba(10, 10, 46, 0.95) 100%
+  );
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: white;
+}
+
+.logo-text {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.logo-text small {
+  font-size: 0.85rem;
+  color: #eee;
+  font-style: italic;
+}
+
+.logo-text .tagline {
+  font-size: 0.75rem;
+  color: #ccc;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin-left: auto;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00c6ff;
+}
+
+/* Header Styles
+.header {
+  background: linear-gradient(
+    135deg,
+    rgba(26, 26, 61, 0.95) 0%,
+    rgba(10, 10, 46, 0.95) 100%
+  );
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-icon {
+  height: 60px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.logo-text {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.logo-text small {
+  font-size: 0.85rem;
+  color: #eee;
+  font-style: italic;
+}
+
+.logo-text .tagline {
+  font-size: 0.75rem;
+  color: #ccc;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin-left: auto;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00c6ff;
+}
+
+.nav-link.active {
+  color: #00c6ff;
+} */
+
+/* Hero Section */
+.clients-hero {
+  background: rgba(30, 60, 114, 0.85);
+  padding: 6rem 3rem;
+  text-align: center;
+  color: white;
+}
+
+.clients-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  animation: fadeInDown 1s ease;
+}
+
+.clients-hero p {
+  font-size: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Trust Metrics Section */
+.trust-metrics {
+  background: rgba(10, 10, 46, 0.85);
+  padding: 4rem 3rem;
+  color: white;
+}
+
+.metrics-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.metrics-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #00c6ff;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.metric-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metric-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 198, 255, 0.3);
+}
+
+.metric-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00c6ff;
+  margin-bottom: 0.5rem;
+}
+
+.metric-label {
+  font-size: 1.1rem;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Industries Section */
+.industries-section {
+  background: rgba(42, 82, 152, 0.85);
+  padding: 4rem 3rem;
+  color: white;
+  text-align: center;
+}
+
+.industries-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.industries-section p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.8;
+}
+
+.industry-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.industry-tag {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.industry-tag:hover {
+  background: rgba(0, 198, 255, 0.3);
+  border-color: #00c6ff;
+  transform: scale(1.05);
+}
+
+/* Clients Grid Section */
+.clients-grid-section {
+  background: rgba(10, 10, 46, 0.85);
+  padding: 5rem 3rem;
+  color: white;
+}
+
+.clients-grid-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  color: #00c6ff;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.client-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 3rem;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.client-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 198, 255, 0.3);
+  border-color: #00c6ff;
+}
+
+.client-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 2rem;
+  background: rgb(215, 210, 202);
+  padding: 1rem;
+  border-radius: 50px;
+}
+
+.client-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #00c6ff;
+}
+
+.client-card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgb(171, 151, 122);
+}
+
+/* Partnership CTA Section */
+.partnership-cta {
+  background: rgba(30, 60, 114, 0.85);
+  padding: 5rem 3rem;
+  text-align: center;
+  color: white;
+}
+
+.partnership-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.partnership-cta p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.8;
+}
+
+.cta-button {
+  background-color: rgb(67, 67, 229);
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #00c6ff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 198, 255, 0.4);
+}
+
+/* Footer Styles */
+.tgist-footer {
+  background-color: rgba(26, 26, 61, 0.95);
+  color: white;
+  padding: 3rem 2rem 1rem;
+  font-family: "Segoe UI", sans-serif;
+  width: 100%;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-grid > div {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-grid h3 {
+  color: #00c6ff;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-grid p,
+.footer-links li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #00c6ff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #ccc;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .clients-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .clients-hero p {
+    font-size: 1.2rem;
+  }
+
+  .nav-menu {
+    gap: 1rem;
+  }
+
+  .clients-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
