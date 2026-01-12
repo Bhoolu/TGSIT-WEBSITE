@@ -6,9 +6,9 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&family=Poppins:wght@500&display=swap");
 
-body {
+/* body {
   font-family: "Open Sans", sans-serif;
-}
+} */
 /* body {
   opacity: 0;
   transition: opacity 0.6s ease-in-out;
@@ -30,12 +30,10 @@ button,
 
 body {
   font-family: "Segoe UI", sans-serif;
-  /* background: url(./images/supervisor-doing-checkup-data-center-workplace-verifying-reports-files.jpg); */
-  background: url(Images/virtual-padlock-hologram-dark-blue-background-concept-network-security-cyber-security-network.jpg);
+  background: url(Images/bg-lock.jpg) no-repeat center center fixed;
 }
 .one {
-  background: url(Images/employee-monitoring-supercomputers-issues-such-as-overheating.jpg)
-    no-repeat center center;
+  background: url(Images/bg-server.jpg) no-repeat center center;
   background-size: cover;
   height: 1000px;
 }
@@ -167,10 +165,6 @@ body {
   gap: 0.2rem;
   /* padding: 10rem; */
   flex-wrap: wrap;
-  /* background: url(./images/d3594114-cc81-43b1-9680-35910adb116e.jpg) no-repeat
-    center;
-  background-size: cover;  */
-  /* background-image: url(images/Copilot_20251102_030511.png); */
 }
 
 .about-content {
@@ -311,9 +305,7 @@ body {
   width: 100%;
   height: 600px;
   /* min-height: 90vh; */
-  background: url(Images/virtual-padlock-hologram-dark-blue-background-concept-network-security-cyber-security-network.jpg)
-    /* background: url("./images/8dc20b_07f1aa49c0ec48ffa1d1704192143b15.png") */
-    no-repeat center center;
+  background: url(Images/bg-lock.jpg) no-repeat center center;
   background-size: cover;
   /* border-radius: 8px;         */
 }
@@ -417,7 +409,7 @@ body {
 }
 
 .testimonial-section {
-  background: url(Images/th2.jpeg) no-repeat center center;
+  /* background: url(../Images/th\ 4.jpeg) no-repeat center center; */
   background-size: cover;
   padding: 4rem 2rem;
   text-align: center;

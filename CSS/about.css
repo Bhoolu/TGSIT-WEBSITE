@@ -1,3 +1,25 @@
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header Styles */
+.header {
+  background: linear-gradient(
+    135deg,
+    rgba(26, 26, 61, 0.95) 0%,
+    rgba(10, 10, 46, 0.95) 100%
+  );
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
 .about-hero {
   /* height: 400px; */
   background: url(Images/d3594114-cc81-43b1-9680-35910adb116e.jpg);
