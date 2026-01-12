@@ -4,7 +4,7 @@
 // --- Learn More Buttons ---
 document.querySelectorAll(".learn-button").forEach((button) => {
   button.addEventListener("click", () => {
-    window.location.href = "/HTML/about.html";
+    window.location.href = "../HTML/about.html";
   });
 });
 
@@ -25,19 +25,19 @@ document.querySelectorAll(".nav-link").forEach((link) => {
 
     switch (text) {
       case "index":
-        window.location.href = "/HTML/index.html"; // main homepage
+        window.location.href = "../HTML/index.html"; // main homepage
         break;
       case "about us":
-        window.location.href = "/HTML/about.html"; // create about.html
+        window.location.href = "../HTML/about.html"; // create about.html
         break;
       case "overview":
-        window.location.href = "/HTML/overview.html"; // create overview.html
+        window.location.href = "../HTML/overview.html"; // create overview.html
         break;
       case "clients & partners":
-        window.location.href = "/HTML/client.html"; // create clients.html
+        window.location.href = "../HTML/client.html"; // create clients.html
         break;
       case "contact us":
-        window.location.href = "/HTML/contact.html"; // create contact.html
+        window.location.href = "../HTML/contact.html"; // create contact.html
         break;
       // case "blog":
       //   window.location.href = "/blog.html"; // create blog.html
@@ -51,7 +51,7 @@ document.querySelectorAll(".nav-link").forEach((link) => {
 // --- Learn More Buttons ---
 document.querySelectorAll(".learn-button").forEach((button) => {
   button.addEventListener("click", () => {
-    window.location.href = "/HTML/overview.html"; // redirect to overview page
+    window.location.href = "../HTML/overview.html"; // redirect to overview page
   });
 });
 
@@ -59,7 +59,7 @@ document.querySelectorAll(".learn-button").forEach((button) => {
 const ctaButton = document.querySelector(".cta-button");
 if (ctaButton) {
   ctaButton.addEventListener("click", () => {
-    window.location.href = "/HTML/get-started.html"; // redirect to Get Started page
+    window.location.href = "../HTML/get-started.html"; // redirect to Get Started page
   });
 }
 
