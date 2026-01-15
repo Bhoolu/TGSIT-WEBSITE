@@ -2,8 +2,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TGIST</title>
-    <link rel="stylesheet" href="CSS/tgist.css" />
+    <title>TGSIT</title>
+    <link rel="stylesheet" href="CSS/tgsit.css" />
     <link rel="stylesheet" href="CSS/contact.css" />
   </head>
   <body>
@@ -17,7 +17,7 @@
               class="logo-icon"
             />
             <div class="logo-text">
-              TGIST<br />
+              TGSIT<br />
               <small>Beyond Security, Smarter Solution</small><br />
               <span class="tagline"
                 >The Group Security & Information Technology</span
@@ -45,7 +45,7 @@
         <h1>Contact Us</h1>
         <form
           class="contact-form"
-          action="mailto:support@tgist.com"
+          action="mailto:support@tgsit.com"
           method="post"
           enctype="text/plain"
         >
@@ -65,21 +65,21 @@
         </form>
       </section>
       <div class="social-icons">
-        <a href="https://facebook.com/tgist" target="_blank">
+        <a href="https://facebook.com/tgsit" target="_blank">
           <img src="Images/facebook-logo-png-38347.png" alt="Facebook" />
         </a>
-        <a href="https://linkedin.com/company/tgist" target="_blank">
+        <a href="https://linkedin.com/company/tgsit" target="_blank">
           <img src="Images/inldln.png" alt="LinkedIn" />
         </a>
-        <a href="https://twitter.com/tgist" target="_blank">
+        <a href="https://twitter.com/tgsit" target="_blank">
           <img src="Images/twitter.jpg" alt="Twitter" />
         </a>
-        <a href="https://instagram.com/tgist" target="_blank">
+        <a href="https://instagram.com/tgsit" target="_blank">
           <img src="Images/insta.jpg" alt="Instagram" />
         </a>
       </div>
       <!-- ////footer/////-->
-      <footer class="tgist-footer">
+      <footer class="tgsit-footer">
         <div class="footer-grid">
           <div class="footer-about">
             <div class="logo-container">
@@ -89,7 +89,7 @@
                 class="logo-icon"
               />
               <span class="logo-text">
-                TGIST<br />
+                TGSIT<br />
                 <small>Beyond Security, Smarter Solution</small>
               </span>
             </div>
@@ -120,7 +120,7 @@
 
           <div class="footer-contact">
             <h3>Contact</h3>
-            <p>Email: support@tgist.com</p>
+            <p>Email: support@tgsit.com</p>
             <p>Phone: +234 800 123 4567</p>
             <p>Location: Abuja, Nigeria</p>
             <!-- <div class="social-icons">
@@ -132,9 +132,56 @@
         </div>
 
         <div class="footer-bottom">
-          <p>&copy; 2025 TGIST — Beyond Security, Smarter Solutions.</p>
+          <p>&copy; 2025 TGSIT — Beyond Security, Smarter Solutions.</p>
         </div>
       </footer>
     </div>
+    <script src="JS/tgsit.js"></script>
+    <script>
+      // Contact form handling
+      document.addEventListener("DOMContentLoaded", () => {
+        const contactForm = document.querySelector(".contact-form");
+
+        if (contactForm) {
+          contactForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const formData = {
+              name: document.getElementById("name").value,
+              email: document.getElementById("email").value,
+              subject:
+                document.getElementById("subject")?.value || "No subject",
+              message: document.getElementById("message").value,
+            };
+
+            const submitBtn = contactForm.querySelector(".submit-btn");
+            submitBtn.textContent = "Sending...";
+            submitBtn.disabled = true;
+
+            try {
+              const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+              });
+
+              const result = await response.json();
+
+              if (result.success) {
+                alert("✅ " + result.message);
+                contactForm.reset();
+              } else {
+                alert("❌ " + result.message);
+              }
+            } catch (error) {
+              alert("❌ Failed to send. Please try again.");
+            } finally {
+              submitBtn.textContent = "Send Message";
+              submitBtn.disabled = false;
+            }
+          });
+        }
+      });
+    </script>
   </body>
 </html>
