@@ -1,16 +1,19 @@
-/* Fixed about.css - Maintaining Original Styling */
+/* Updated about.css with Modern Professional Fonts */
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap");
 
 h1,
 h2,
 h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 button {
-  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
 }
 
-/* Header Styles - ORIGINAL: Dark gradient background, NOT transparent */
+/* Header Styles */
 .header {
   background: linear-gradient(
     135deg,
@@ -22,9 +25,8 @@ button {
   z-index: 1;
 }
 
-/* About Hero Section - ORIGINAL: Has its own background image */
+/* About Hero Section */
 .about-hero {
-  /* Fixed: Use absolute path from root */
   background: url(/Images/d3594114-cc81-43b1-9680-35910adb116e.jpg);
   background-size: cover;
   background-position: center;
@@ -34,14 +36,19 @@ button {
 }
 
 .about-hero h1 {
+  font-family: "Space Grotesk", sans-serif;
   font-size: 3.5rem;
+  font-weight: 700;
   margin-bottom: 1.5rem;
   animation: fadeInDown 1s ease;
   color: #00c6ff;
+  letter-spacing: 1px;
 }
 
 .about-hero p {
+  font-family: "Inter", sans-serif;
   font-size: 1.5rem;
+  font-weight: 400;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.8;
@@ -86,13 +93,17 @@ button {
 }
 
 .content-card h2 {
+  font-family: "Sora", sans-serif;
   color: #00c6ff;
   font-size: 2rem;
+  font-weight: 600;
   margin-bottom: 1.5rem;
 }
 
 .content-card p {
+  font-family: "Inter", sans-serif;
   font-size: 1.1rem;
+  font-weight: 400;
   line-height: 1.8;
   color: #ddd;
 }
@@ -110,13 +121,18 @@ button {
 }
 
 .story-content h2 {
+  font-family: "Space Grotesk", sans-serif;
   font-size: 2.5rem;
+  font-weight: 700;
   margin-bottom: 2rem;
   color: #00c6ff;
+  letter-spacing: 0.5px;
 }
 
 .story-content p {
+  font-family: "Inter", sans-serif;
   font-size: 1.3rem;
+  font-weight: 400;
   line-height: 2;
   margin-bottom: 1.5rem;
 }
@@ -128,10 +144,13 @@ button {
 }
 
 .values-section h2 {
+  font-family: "Sora", sans-serif;
   text-align: center;
   font-size: 3rem;
+  font-weight: 700;
   margin-bottom: 3rem;
   color: #00c6ff;
+  letter-spacing: 0.5px;
 }
 
 .values-grid {
@@ -153,13 +172,17 @@ button {
 }
 
 .value-item h3 {
+  font-family: "Sora", sans-serif;
   font-size: 1.5rem;
+  font-weight: 600;
   margin-bottom: 1rem;
   color: #00c6ff;
 }
 
 .value-item p {
+  font-family: "Manrope", sans-serif;
   font-size: 1.1rem;
+  font-weight: 400;
   line-height: 1.6;
   color: #ccc;
 }

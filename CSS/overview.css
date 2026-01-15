@@ -1,24 +1,32 @@
+/* Updated overview.css with Modern Fonts */
+
 /* Basic Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap");
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   background: url("Images/background-modern-technology-concept-cybersecurity-background_794573-7793 - Copy.avif")
     no-repeat center center fixed;
   background-size: cover;
 }
+
 h1,
 h2,
 h3 {
-  font-family: "Open Sans", sans-serif; /* keep headings modern everywhere else */
+  font-family: "Inter", sans-serif;
 }
+
 button {
-  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
 }
+
 /* Header Styles */
 .header {
   background: linear-gradient(
@@ -57,6 +65,7 @@ button {
   color: white;
   font-size: 1.2rem;
   line-height: 1.4;
+  font-family: "Sora", sans-serif;
 }
 
 .logo-text small {
@@ -80,7 +89,8 @@ button {
 .nav-link {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
   transition: color 0.3s ease;
 }
 
@@ -93,43 +103,49 @@ button {
   background: rgba(26, 26, 61, 0.85);
   padding: 8rem 3rem 5rem;
   text-align: center;
-
   color: white;
 }
 
 .overview-hero h1 {
+  font-family: "Space Grotesk", sans-serif;
   font-size: 4rem;
+  font-weight: 700;
   margin-bottom: 2rem;
   color: #00c6ff;
-  /* color: white; */
   text-transform: uppercase;
   letter-spacing: 3px;
 }
 
-/* Mission Section */
+/* Mission Section - Using Modern Inter Font */
 .mission-section-container {
   background: rgba(10, 10, 46, 0.85);
   padding: 5rem 3rem;
   color: white;
 }
+
 .mission-content {
   max-width: 1100px;
   margin: 0 auto;
 }
+
 .mission-title {
+  font-family: "Space Grotesk", sans-serif;
   font-size: 3rem;
+  font-weight: 700;
   margin-bottom: 2rem;
   color: #00c6ff;
   text-align: left;
-  font-family: "Libre Baskerville", serif; /* elegant serif for the title */
+  letter-spacing: 0.5px;
 }
+
 .mission-content p {
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
-  line-height: 1.6;
+  font-weight: 400;
+  line-height: 1.8;
   margin-bottom: 1rem;
   color: #ddd;
   text-align: left;
-  font-family: "Libre Baskerville", serif; /* elegant serif for mission text */
 }
 
 /* Services Grid */
@@ -140,10 +156,13 @@ button {
 }
 
 .services-section h2 {
+  font-family: "Sora", sans-serif;
   text-align: center;
   font-size: 3rem;
+  font-weight: 700;
   margin-bottom: 4rem;
   color: white;
+  letter-spacing: 0.5px;
 }
 
 .services-grid {
@@ -176,13 +195,17 @@ button {
 }
 
 .service-card h3 {
+  font-family: "Sora", sans-serif;
   font-size: 1.8rem;
+  font-weight: 600;
   margin-bottom: 1rem;
   color: #00c6ff;
 }
 
 .service-card p {
+  font-family: "Inter", sans-serif;
   font-size: 1.1rem;
+  font-weight: 400;
   line-height: 1.7;
   color: #ddd;
 }
@@ -211,14 +234,17 @@ button {
 }
 
 .stat-number {
+  font-family: "Space Grotesk", sans-serif;
   font-size: 3.2rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #00c6ff;
   margin-bottom: 0.5rem;
 }
 
 .stat-label {
+  font-family: "Manrope", sans-serif;
   font-size: 1.2rem;
+  font-weight: 500;
   color: #ccc;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -232,10 +258,13 @@ button {
 }
 
 .approach-section h2 {
+  font-family: "Sora", sans-serif;
   text-align: center;
   font-size: 3rem;
+  font-weight: 700;
   margin-bottom: 4rem;
   color: white;
+  letter-spacing: 0.5px;
 }
 
 .approach-timeline {
@@ -255,20 +284,25 @@ button {
 }
 
 .timeline-number {
+  font-family: "Space Grotesk", sans-serif;
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #00c6ff;
   min-width: 60px;
 }
 
 .timeline-content h3 {
+  font-family: "Sora", sans-serif;
   font-size: 1.8rem;
+  font-weight: 600;
   margin-bottom: 1rem;
   color: #00c6ff;
 }
 
 .timeline-content p {
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
+  font-weight: 400;
   line-height: 1.8;
   color: #ddd;
 }
@@ -278,7 +312,7 @@ button {
   background-color: rgba(26, 26, 61, 0.95);
   color: white;
   padding: 3rem 2rem 1rem;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Inter", sans-serif;
   width: 100%;
 }
 
@@ -295,9 +329,11 @@ button {
 }
 
 .footer-grid h3 {
+  font-family: "Sora", sans-serif;
   color: #00c6ff;
   margin-bottom: 1rem;
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .footer-grid p,
